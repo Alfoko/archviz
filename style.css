@@ -121,10 +121,20 @@ nav a:hover::before {
   
   h1 {
     font-size: 7rem;
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
   }
 
   h2 {
     font-size: 2rem;
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
   }
 
   h3 {
