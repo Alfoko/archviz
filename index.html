@@ -12,13 +12,22 @@
 <body>
   <header class="navigation">
     <nav>
-      <ul>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -1050 660 960" width="26" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
         <li><a href="index.html">HOME</a></li>
         <li><a href="portfolio.html">PORTFOLIO</a></li>
         <li><a href="about.html">ABOUT ME</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
+      <ul>
+        <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+        <li class="hideOnMobile"><a href="portfolio.html">PORTFOLIO</a></li>
+        <li class="hideOnMobile"><a href="about.html">ABOUT ME</a></li>
+        <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -1200 960 960" width="26" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
     </nav>
+
     </header>
 
     <div class="home">
@@ -50,5 +59,16 @@
       </div>   
     </section>
 
+<script>
+  function showSidebar() {
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display = "flex"
+  }
 
+  function hideSidebar() {
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display = "none"
+  }
+</script>
+</body>
 </html>
