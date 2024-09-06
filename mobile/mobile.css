@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    /* change scrollbar */
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #f4f4f4;
+  
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 5vw;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    font-weight: bold;
+    font-family: "Bricolage Grotesque", sans-serif;
+    padding: 10px 20px;
+    position: relative;
+    /* make a border with rounded edges */
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: 0.5s;
+    width: 100px;
+  }
+  
+  nav a::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 1;
+    z-index: -1;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: 0.2s;
+  }
+  
+  nav a:hover::before {
+    top: -1px;
+    left: -1px;
+    transition: 0.2s;
+  }
+  
+    .hero {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+  
+    .main {
+      margin: 10%;
+    }
+  
+    .home {
+      display: flex;
+      z-index: -1;
+    }
+  
+    .name {
+      position: absolute;
+      top: 10vw;
+      left: 7%;
+      width: 70%;
+    }
+  
+    .archvizartist {
+      position: absolute;
+      top: 160px;
+      width: 90%;
+    }
+    
+    video {
+      object-fit: cover;
+      width: 10%;
+      height: 10%;
+    }
+    
+    h1, h2 {
+      position: absolute;
+      color: white;
+    }
+    
+    h1 {
+      font-size: 6rem;
+      text-shadow:
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+      line-height: 90%;
+      width: 60%;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      text-shadow:
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+      padding-top: 25%;
+      padding-left: 2%;
+    }
+  
+    h3 {
+      font-size: 1rem;
+      justify-content: center;
+      display: flex;
+      font-weight: 300;
+      font-stretch: expanded;
+      letter-spacing: 1rem;
+    }
+  
+    video#background-video {
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+  
+    video#mobile-background-video {
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+  
+    .content {
+      display: flex;
+      align-items: flex-start;
+      gap: 5%;
+      justify-content: center;
+    }
+  
+    .contentportfolio1 {
+      display: flex;
+      align-items: flex-start;
+      gap: 5%;
+      justify-content: center;
+    }
+  
+    .paragraph1 {
+      width: 90%;
+      text-align: justify;
+    }
+    
+    .photo1 {
+      max-width: 50%;
+      height: auto;
+      display: block;
+      align-items: right;
+      border-radius: 20px;
+      border: 2px solid black;
+    }
+  
+    .portfolio1 {
+      max-width: 50%;
+      height: auto;
+      align-items: right;
+    }
+  
+  #main {
+      display: flex;
+      height: 100vh;
+      margin-left: 3%;
+  }
+  
+  .split {
+      flex: 1;
+      display: flex;
+      align-items: center;
+  }
+  
+  .left {
+      background-color: #ffffff;
+      justify-content: center;
+  }
+  
+  .right img {
+      width: 30vw;
+      justify-content: left;
+      border-radius: 20px;
+      border: 2px solid black;
+  }
+    
+  .portfolioh4 {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 5rem;
+  }
+  
+  .description {
+    margin-left: 40%;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .description1 {
+    text-align: left;
+    padding: 20%;
+    padding-top: 10%;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+  }
+  
+  .description2 {
+    text-align: center;
+    padding: 10%;
+    padding-top: 0%;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .aboutmeh4 {
+    color:#333;
+    margin-left: 20%;
+    font-size: 4rem;
+  }
+  
+  .aboutmeh2 {
+    color:#333;
+    text-align: center;
+  }
+  
+  .contacth4 {
+    color:#333;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 20%;
+    margin-bottom: 0%;
+  }
+  
+  .contact {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .pcontact {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+  
+  .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;  
+    background-color: rgba(255, 255, 255, 0.268);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10%;
+    /* make it slide in when it appears */
+    animation: slideIn 0.5s forwards;
+    
+  }
+  
+  
+  .sidebar li{
+    width: 50%;
+    margin-left: 14%;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+    margin-right: 0;
+  }
+  
+  .sidebar a{
+    width: 100%;
+    display: block;
+  }
+  
+  .menu-button{
+    display: none;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;
+    padding: 0;
+    border: none;
+    align-items: right;
+    justify-content: right;
+  }
+  
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+  
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .menu-button{
+      display: block;
+      /* move it to stick to the right */
+      position: fixed;
+      top: 0;
+      right: 0;
+      margin: 1rem;
+      padding: 1rem;
+      border: none;
+    }
+  }

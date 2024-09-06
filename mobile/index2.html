@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Okula</title>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <video autoplay muted loop id="mobile-background-video">
+    <source src="video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -1050 660 960" width="26" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+      <ul>
+        <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+        <li class="hideOnMobile"><a href="portfolio1.html">PORTFOLIO</a></li>
+        <li class="hideOnMobile"><a href="about1.html">ABOUT ME</a></li>
+        <li class="hideOnMobile"><a href="contact1.html">CONTACT</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -1200 960 960" width="26" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+
+    <div class="name">
+        <h1>Alex Okula</h1>
+        <div class="archvizartist">
+          <h2>ArchViz Artist</h2>
+        </div>
+      </div>
+      <br><br><br>
+    <section id="main">
+        <div class="main">
+          <h3> CLEAN </h3> <br>
+          <h3> SUSTAINABLE </h3> <br>
+          <h3> MODERN </h3> <br><br><br>
+          <div class="content">
+            <div class="paragraph1">
+              My mission is to design spaces that not only look beautiful but also contribute positively to the environment. I believe in creating homes that are energy-efficient, eco-friendly, and harmonious with nature. Using years of experience from past projects and clients, I am committed to turning your dream home into a sustainable reality.
+              <br><br>
+              I embrace the principles of clean, sustainable living. In order to do so, I strive to minimize our environmental footprint through innovative design and advanced technology. From sleek urban apartments to serene countryside homes, my designs reflect my dedication to creating spaces that are as functional as they are beautiful. 
+              <br><br>
+              Every project showcases my commitment to excellence, sustainability, and the art of living well.
+            </div>
+          </div>
+        </div>   
+      </section>
+
+      <script>
+        function showSidebar() {
+          const sidebar = document.querySelector(".sidebar")
+          sidebar.style.display = "flex"
+        }
+      
+        function hideSidebar() {
+          const sidebar = document.querySelector(".sidebar")
+          sidebar.style.display = "none"
+        }
+      </script>
+</body>
+</html>
